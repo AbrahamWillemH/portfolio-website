@@ -89,7 +89,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="min-h-screen py-24 text-white bg-slate-200">
+    <motion.section transition={{duration: 1}} initial={{opacity:0, y:50}} whileInView={{opacity: 1, y:0}} id="projects" className="min-h-screen py-24 text-white bg-slate-200">
       <div className="flex justify-center text-center mb-4">
         <h2 className="font-semibold text-5xl underline text-black">My Projects</h2>
       </div>
@@ -146,6 +146,6 @@ export default function Projects() {
           </div>
         </div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 }

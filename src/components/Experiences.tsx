@@ -1,6 +1,8 @@
+import {motion} from 'framer-motion'
+
 export default function Experiences() {
   return (
-    <section id="experiences" className="flex flex-col min-h-screen items-center justify-center py-24 bg-slate-200">
+    <motion.section transition={{duration: 1}} initial={{opacity:0, y:50}} whileInView={{opacity: 1, y:0}} id="experiences" className="flex flex-col min-h-screen items-center justify-center py-24 bg-slate-200">
       <div className="flex flex-col text-center px-5 w-3/4">
         <h2 className="text-5xl font-semibold underline">Experiences</h2>
         <p className="mt-6">Below are my experiences during my journey in Machine Learning, <br></br>Software / Web Application, and other IT Roles.</p>
@@ -39,6 +41,6 @@ export default function Experiences() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

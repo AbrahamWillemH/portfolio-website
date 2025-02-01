@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
+
 export default function About() {
     return (
-      <section id="about" className="flex flex-col min-h-170 items-center justify-center">
+      <motion.section transition={{duration: 1}} initial={{opacity:0, y:50}} whileInView={{opacity: 1, y:0}} id="about" className="flex flex-col min-h-170 items-center justify-center">
         <div className="flex flex-col text-center px-5 w-3/4">
           <h2 className="text-5xl mt-20 md:text-6xl font-semibold">Abraham Willem Hersubagyo</h2>
           <p className="mt-6">a passionate undergraduate IT student with experience in building web applications and other IT roles.</p>
@@ -38,6 +40,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     );
   }
