@@ -11,9 +11,9 @@ export function App() {
       <div>
         <Header />
         <About />
-        <Projects />
         <Experiences />
-        {/* <Contact /> */}
+        <Projects />
+        <Contact />
       </div>
   )
 }
