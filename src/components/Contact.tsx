@@ -11,19 +11,19 @@ export default function Contact() {
         <p className="text-center">Undergraduate IT Student in Universitas Sebelas Maret</p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 p-5 mt-10 place-content-center gap-12 lg:gap-20">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abraham120604@gmail.com" target="_blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abraham120604@gmail.com" target="_blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 active:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2 active:underline active:border-2">
           <img src="email.gif" alt="website gif" className="w-8 h-8 lg:w-12 lg:h-12"/>
           <p className="mt-4 font-medium">Email</p>
         </a>
-        <a href="https://wa.me/6285800738654" target="_blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2">
+        <a href="https://wa.me/6285800738654" target="_blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 active:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2 active:underline active:border-2">
           <img src="whatsapp.gif" alt="website gif" className="w-8 h-8 lg:w-12 lg:h-12"/>
           <p className="mt-4 font-medium">Whatsapp</p>
         </a>
-        <a href="https://www.linkedin.com/in/abraham-hersubagyo-a49377303/" target="blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2">
+        <a href="https://www.linkedin.com/in/abraham-hersubagyo-a49377303/" target="blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 active:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2 active:underline active:border-2">
           <img src="linkedin.gif" alt="website gif" className="w-8 h-8 lg:w-12 lg:h-12"/>
           <p className="mt-4 font-medium">LinkedIn</p>
         </a>
-        <a href="https://github.com/AbrahamWillemH" target="_blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2">
+        <a href="https://github.com/AbrahamWillemH" target="_blank" className="flex flex-col w-30 h-30 border lg:w-40 lg:h-40 items-center text-center transition duration-300 ease-in-out hover:scale-108 active:scale-108 border-black py-8 rounded-full flex-grow hover:underline hover:border-2 active:underline active:border-2">
           <img src="github.gif" alt="website gif" className="w-8 h-8 lg:w-12 lg:h-12"/>
           <p className="mt-4 font-medium">GitHub</p>
         </a>

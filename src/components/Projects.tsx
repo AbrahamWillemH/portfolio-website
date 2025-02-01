@@ -107,7 +107,7 @@ export default function Projects() {
         <div className="flex flex-col text-center items-center lg:items-end p-10 lg:w-2/4 lg:text-right">
           <h2 className="font-semibold text-2xl">{projects[currentIndex].title}</h2>
           <p className="mt-5" dangerouslySetInnerHTML={{ __html: projects[currentIndex].description }}></p>
-          <a href={projects[currentIndex].link} target="_blank" className="rounded-full border border-white hover:border-none hover:underline hover:bg-black text-center mt-10 w-1/2 p-4 transform duration-300 hover:scale-110 ease-in-out lg:ml-auto">
+          <a href={projects[currentIndex].link} target="_blank" className="rounded-full border border-white hover:border-none hover:underline hover:bg-black  active:border-none active:underline active:bg-black text-center mt-10 w-1/2 p-4 transform duration-300 hover:scale-110 active:scale-110 ease-in-out lg:ml-auto">
             View More
           </a>
         </div>
@@ -137,10 +137,10 @@ export default function Projects() {
           </div>
 
           <div className="flex flex-row space-x-20 lg:space-x-30 mt-10">
-            <button onClick={prevProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black duration-300 ease-in-out cursor-pointer">
+            <button onClick={prevProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black active:text-white active:bg-black duration-300 ease-in-out cursor-pointer">
               &lt;
             </button>
-            <button onClick={nextProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black duration-300 ease-in-out cursor-pointer">
+            <button onClick={nextProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black active:text-white active:bg-black duration-300 ease-in-out cursor-pointer">
               &gt;
             </button>
           </div>
