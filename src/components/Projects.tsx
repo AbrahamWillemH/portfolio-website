@@ -93,7 +93,7 @@ export default function Projects() {
       <div className="flex justify-center text-center mb-4">
         <h2 className="font-semibold text-5xl underline text-black">My Projects</h2>
       </div>
-      <motion.div className="flex flex-row space-x-10 justify-center items-center py-20 rounded-4xl mx-15"
+      <motion.div className="flex flex-col-reverse lg:flex-row lg:space-x-10 lg:justify-center lg:items-center lg:py-20 lg:rounded-4xl lg:mx-15"
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${projects[currentIndex]?.background})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -104,10 +104,10 @@ export default function Projects() {
       exit={{ opacity: 0, scale: 0.5 }}
       transition={{ duration: 0.8, ease: "easeOut" }}>
 
-        <div className="flex flex-col w-1/4 text-right">
+        <div className="flex flex-col text-center items-center lg:items-end p-10 lg:w-2/4 lg:text-right">
           <h2 className="font-semibold text-2xl">{projects[currentIndex].title}</h2>
           <p className="mt-5" dangerouslySetInnerHTML={{ __html: projects[currentIndex].description }}></p>
-          <a href={projects[currentIndex].link} target="_blank" className="rounded-full border border-white hover:border-none hover:underline hover:bg-black text-center mt-10 w-1/2 p-4 transform duration-300 hover:scale-110 ease-in-out ml-auto">
+          <a href={projects[currentIndex].link} target="_blank" className="rounded-full border border-white hover:border-none hover:underline hover:bg-black text-center mt-10 w-1/2 p-4 transform duration-300 hover:scale-110 ease-in-out lg:ml-auto">
             View More
           </a>
         </div>
@@ -123,7 +123,7 @@ export default function Projects() {
             <img
               src={projects[currentIndex].image}
               alt={projects[currentIndex].title}
-              className="w-120 h-70 rounded-full"
+              className="w-85 mt-10 lg:w-120 rounded-full"
             />
           </motion.div>
 
@@ -136,7 +136,7 @@ export default function Projects() {
             ))}
           </div>
 
-          <div className="flex flex-row space-x-5 mt-10">
+          <div className="flex flex-row space-x-20 lg:space-x-30 mt-10">
             <button onClick={prevProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black duration-300 ease-in-out cursor-pointer">
               &lt;
             </button>

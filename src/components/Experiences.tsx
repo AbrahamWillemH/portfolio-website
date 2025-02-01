@@ -4,7 +4,7 @@ export default function Experiences() {
       <div className="flex flex-col text-center px-5 w-3/4">
         <h2 className="text-5xl font-semibold underline">Experiences</h2>
         <p className="mt-6">Below are my experiences during my journey in Machine Learning, <br></br>Software / Web Application, and other IT Roles.</p>
-        <div className="grid grid-cols-3 p-5 mt-10 place-content-between gap-8">
+        <div className="grid gap-10 mt-10 md:grid-cols-3 md:p-5 md:mt-10 md:place-content-between md:gap-8">
           <div className="flex flex-col items-center text-center border-2 hover:bg-slate-300 transition duration-300 ease-in-out hover:scale-108 border-black px-4 py-8 rounded-3xl flex-grow">
             <img src="bangkit.png" alt="website gif" className="w-30 rounded-lg"/>
             <p className="mt-6 font-semibold">Bangkit Machine Learning Cohort</p>
@@ -24,7 +24,7 @@ export default function Experiences() {
             <a href="https://github.com/AbrahamWillemH/enzo-group-erp" className="mt-auto transition duration-300 ease-in-out hover:scale-110 hover:underline bg-black text-white px-6 py-2 rounded-full">Learn More</a>
           </div>
         </div>
-        <div className="grid grid-cols-2 p-5 mt-10 place-content-between gap-8">
+        <div className="grid gap-10 mt-10 md:grid-cols-2 md:p-5 md:mt-10 md:place-content-between md:gap-8">
           <div className="flex flex-col items-center text-center border-2 hover:bg-slate-300 transition duration-300 ease-in-out hover:scale-108 border-black px-4 py-8 rounded-3xl flex-grow">
             <img src="himaster.png" alt="website gif" className="w-24 rounded-lg"/>
             <p className="mt-6 font-semibold">HIMASTER's Head of Division</p>
