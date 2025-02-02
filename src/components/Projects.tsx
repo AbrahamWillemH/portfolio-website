@@ -22,7 +22,7 @@ export default function Projects() {
       description: "Laravel-based website. Streamlines customer order management while seamlessly integrating inventory tracking, purchase orders, and team calendars. It ensures real-time inventory updates, automates purchase orders after payments, and keeps the team on schedule with a dynamic calendar. <br> Designed for efficiency, it replaces spreadsheets with a centralized system, improving workflow and reducing errors.",
       background: "bg-enzo.jpg",
       image: "enzo-3.png",
-      link: "https://erp.enzocreatives.com"
+      // link: "https://erp.enzocreatives.com"
     },
     {
       title: "Health Tracker",
