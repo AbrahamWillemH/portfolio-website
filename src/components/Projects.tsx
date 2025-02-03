@@ -89,63 +89,65 @@ export default function Projects() {
   };
 
   return (
-    <motion.section transition={{duration: 1}} initial={{opacity:0, y:50}} whileInView={{opacity: 1, y:0}} id="projects" className="min-h-screen pt-24 mb-14 lg:mb-0 lg:py-24 text-white bg-slate-200">
-      <div className="flex justify-center text-center mb-4">
-        <h2 className="font-semibold text-5xl underline text-black">My Projects</h2>
-      </div>
-      <motion.div className="flex flex-col-reverse lg:flex-row lg:space-x-10 lg:justify-center lg:items-center lg:py-20 lg:rounded-4xl lg:mx-15"
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${projects[currentIndex]?.background})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-      key={currentIndex}
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.5 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}>
-
-        <div className="flex flex-col text-center items-center lg:items-end p-10 lg:w-2/4 lg:text-right">
-          <h2 className="font-semibold text-2xl">{projects[currentIndex].title}</h2>
-          <p className="mt-5" dangerouslySetInnerHTML={{ __html: projects[currentIndex].description }}></p>
-          <a href={projects[currentIndex].link} target="_blank" className="rounded-full border border-white hover:border-none hover:underline hover:bg-black  active:border-none active:underline active:bg-black text-center mt-10 w-1/2 p-4 transform duration-300 hover:scale-110 active:scale-110 ease-in-out lg:ml-auto">
-            View More
-          </a>
+    <section id="projects" className="min-h-screen pt-24 mb-14 lg:mb-0 lg:py-24 text-white bg-slate-200">
+      <motion.div  transition={{duration: 1}} initial={{opacity:0, y:50}} whileInView={{opacity: 1, y:0}}>
+        <div className="flex justify-center text-center mb-4">
+          <h2 className="font-semibold text-5xl underline text-black">My Projects</h2>
         </div>
+        <motion.div className="flex flex-col-reverse lg:flex-row lg:space-x-10 lg:justify-center lg:items-center lg:py-20 lg:rounded-4xl lg:mx-15"
+          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${projects[currentIndex]?.background})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        key={currentIndex}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}>
 
-        <div className="flex flex-col items-center">
-          <motion.div
-            key={currentIndex}
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <img
-              src={projects[currentIndex].image}
-              alt={projects[currentIndex].title}
-              className="w-85 mt-10 lg:w-120 rounded-full"
-            />
-          </motion.div>
-
-          <div className="flex mt-4 space-x-2">
-            {projects.map((_, index) => (
-              <span
-                key={index}
-                className={`h-3 w-3 rounded-full ${index === currentIndex ? "bg-white" : "bg-gray-700"}`}
-              ></span>
-            ))}
+          <div className="flex flex-col text-center items-center lg:items-end p-10 lg:w-2/4 lg:text-right">
+            <h2 className="font-semibold text-2xl">{projects[currentIndex].title}</h2>
+            <p className="mt-5" dangerouslySetInnerHTML={{ __html: projects[currentIndex].description }}></p>
+            <a href={projects[currentIndex].link} target="_blank" className="rounded-full border border-white hover:border-none hover:underline hover:bg-black  active:border-none active:underline active:bg-black text-center mt-10 w-1/2 p-4 transform duration-300 hover:scale-110 active:scale-110 ease-in-out lg:ml-auto">
+              View More
+            </a>
           </div>
 
-          <div className="flex flex-row space-x-20 lg:space-x-30 mt-10">
-            <button onClick={prevProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black active:text-white active:bg-black duration-300 ease-in-out cursor-pointer">
-              &lt;
-            </button>
-            <button onClick={nextProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black active:text-white active:bg-black duration-300 ease-in-out cursor-pointer">
-              &gt;
-            </button>
+          <div className="flex flex-col items-center">
+            <motion.div
+              key={currentIndex}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <img
+                src={projects[currentIndex].image}
+                alt={projects[currentIndex].title}
+                className="w-85 mt-10 lg:w-120 rounded-full"
+              />
+            </motion.div>
+
+            <div className="flex mt-4 space-x-2">
+              {projects.map((_, index) => (
+                <span
+                  key={index}
+                  className={`h-3 w-3 rounded-full ${index === currentIndex ? "bg-white" : "bg-gray-700"}`}
+                ></span>
+              ))}
+            </div>
+
+            <div className="flex flex-row space-x-20 lg:space-x-30 mt-10">
+              <button onClick={prevProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black active:text-white active:bg-black duration-300 ease-in-out cursor-pointer">
+                &lt;
+              </button>
+              <button onClick={nextProject} className="border rounded-full p-4 w-16 h-16 flex items-center justify-center hover:text-white hover:bg-black active:text-white active:bg-black duration-300 ease-in-out cursor-pointer">
+                &gt;
+              </button>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 }
