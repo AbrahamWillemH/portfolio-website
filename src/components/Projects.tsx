@@ -103,7 +103,7 @@ export default function Projects() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}>
+        transition={{ duration: 0.6, ease: "easeOut" }}>
 
           <div className="flex flex-col text-center items-center lg:items-end p-10 lg:w-2/4 lg:text-right">
             <h2 className="font-semibold text-2xl">{projects[currentIndex].title}</h2>
