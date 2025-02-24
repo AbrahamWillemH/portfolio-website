@@ -14,7 +14,7 @@ export default function Projects() {
       title: "Backend Developer with NestJS",
       description: "I developed the backend for a Human Resource Information System (HRIS) website for PT Tata Wisata using NestJS. This system streamlines various HR processes, including employee management, attendance tracking, payroll processing, and leave requests. By leveraging NestJS with TypeScript, I ensured a modular and maintainable architecture that supports scalability and performance. <br>The project involved designing and implementing a secure REST API, integrating authentication and authorization using JWT, and establishing role-based access control (RBAC) to manage different user levels such as HR staff, managers, and employees. I also optimized database queries using PostgreSQL and KyselyDB, ensuring efficient data handling and smooth system performance. <br>To enhance HR operations, I implemented an attendance tracking system with timestamps, automated payroll calculations, and a seamless integration with the React-based frontend. This system significantly improved efficiency, reduced paperwork, and streamlined employee data management for PT Tata Wisata.",
       background: "bg-hris.png",
-      image: "hris.jpeg",
+      image: "hris.jpg",
       link: "http://203.194.113.6:3000/"
     },
     {
