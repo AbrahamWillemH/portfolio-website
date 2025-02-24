@@ -4,6 +4,27 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
+      title: "ERP Website",
+      description: "Laravel-based website. Streamlines customer order management while seamlessly integrating inventory tracking, purchase orders, and team calendars. It ensures real-time inventory updates, automates purchase orders after payments, and keeps the team on schedule with a dynamic calendar. <br> Designed for efficiency, it replaces spreadsheets with a centralized system, improving workflow and reducing errors.",
+      background: "bg-enzo.jpg",
+      image: "enzo-3.png",
+      link: "https://erp.enzocreatives.com"
+    },
+    {
+      title: "Backend Developer with NestJS",
+      description: "I developed the backend for a Human Resource Information System (HRIS) website for PT Tata Wisata using NestJS. This system streamlines various HR processes, including employee management, attendance tracking, payroll processing, and leave requests. By leveraging NestJS with TypeScript, I ensured a modular and maintainable architecture that supports scalability and performance. <br>The project involved designing and implementing a secure REST API, integrating authentication and authorization using JWT, and establishing role-based access control (RBAC) to manage different user levels such as HR staff, managers, and employees. I also optimized database queries using PostgreSQL and KyselyDB, ensuring efficient data handling and smooth system performance. <br>To enhance HR operations, I implemented an attendance tracking system with timestamps, automated payroll calculations, and a seamless integration with the React-based frontend. This system significantly improved efficiency, reduced paperwork, and streamlined employee data management for PT Tata Wisata.",
+      background: "bg-hris.png",
+      image: "hris.jpeg",
+      link: "http://203.194.113.6:3000/"
+    },
+    {
+      title: "Frontend Developer with NextJS",
+      description: "I developed the frontend for an Export-Import (Cargo) Management System using Next.js, creating a seamless and user-friendly interface for managing logistics and shipment processes. The system allows users to track shipments, manage orders, handle invoices, and monitor cargo status in real time. <br>By leveraging Next.js with React, I built a highly responsive and dynamic interface optimized for performance. I implemented server-side rendering (SSR) and static site generation (SSG) to enhance loading speeds and SEO. The UI was designed with Tailwind CSS, ensuring a modern and intuitive experience. <br>To improve user interaction, I integrated real-time tracking features, allowing customers and logistics staff to monitor shipment statuses. The dashboard provides comprehensive data visualization, enabling efficient cargo management. This project streamlined the export-import workflow, reducing manual processes and enhancing operational efficiency for the company.",
+      background: "bg-emran.png",
+      image: "emran.webp",
+      link: "https://system.emrankargo.com"
+    },
+    {
       title: "UNISRI's Lembaga Sertifikasi Profesi",
       description: "The UNISRI Lembaga Sertifikasi Profesi (LSP) website is a platform designed to manage and streamline the certification process for professional training and qualifications. Built with a user-friendly interface, the website allows individuals to register for certification exams, track their progress, and access their certification results. Administrators can easily manage registered candidates, exam schedules, and certification statuses.",
       background: "bg-unisri.jpg",
@@ -16,13 +37,6 @@ export default function Projects() {
       background: "bg-unisri.jpg",
       image: "lik.png",
       link: "https://lik-unisri.com/"
-    },
-    {
-      title: "ERP Website",
-      description: "Laravel-based website. Streamlines customer order management while seamlessly integrating inventory tracking, purchase orders, and team calendars. It ensures real-time inventory updates, automates purchase orders after payments, and keeps the team on schedule with a dynamic calendar. <br> Designed for efficiency, it replaces spreadsheets with a centralized system, improving workflow and reducing errors.",
-      background: "bg-enzo.jpg",
-      image: "enzo-3.png",
-      link: "https://erp.enzocreatives.com"
     },
     {
       title: "Health Tracker",
